@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Questao24 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Digite um número: ");
+        int n = sc.nextInt();
+
+        int i = 1;
+
+        while (i <= 10) {
+            int resultado = n * i;
+
+            System.out.println(n + " x " + i + " = " + resultado);
+
+            if (resultado % 7 == 0) {
+                break;
+            }
+
+            i++;
+        }
+    }
+}
